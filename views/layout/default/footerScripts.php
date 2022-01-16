@@ -13,7 +13,6 @@
 
     <div id="modalContainer"></div>
 
-    <script src="/imagenes/public/plugins/clickBox.js"></script>
     <script src="/imagenes/public/plugins/zoomImg.js"></script>
     <script src="/imagenes/public/plugins/modalDeploy.js"></script>
     <script src="/imagenes/public/plugins/bootstrap-typeahead.min.js"></script>

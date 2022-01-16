@@ -11,19 +11,19 @@
     }
 
     function deleteImage(img_id) {
-        window.location = "http://localhost/imagenes/controllers/imgDelete.php?img_id=" + img_id;
-
-        /*$.ajax({
+       
+        frmctrls = '<button type="button" class="close" onclick="javascript:window.location.reload();">Recargar</button>';
+        $.ajax({
             type: "POST",
-            url: "www.google.com",
-            data: {"img_id": img_id}
-        }).done(function () {
-            doModal({formHeading: 'Petición procesada', formContent: 'Imagen eliminada.', formControls: ''});
-            setTimeout(function () {
-                location.reload();
-            }, 2000);
+            url: "http://localhost/imagenes/controllers/imgDelete.php",
+            data: {"img_id": img_id},
+            success: function () {
+                doModal({formHeading: 'Petición procesada', formContent: 'Imagen eliminada.', formControls: frmctrls});
+            },
+            error: function(request) {
+                doModal({formHeading: 'Fallo', formContent: 'Imagen no eliminada.', formControls: frmctrls});
+            }
         });
-        alert("hola");*/
     }
 
 </script>

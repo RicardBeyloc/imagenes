@@ -7,7 +7,8 @@ require_once MODELS_PATH . 'imagenesModel.php';
 
 $_imagenesModel = new imagenesModel(1, $_db);
 
-$id = $_GET['img_id'];
+//$id = $_GET['img_id'];
+$id = $_POST['img_id'];
 
 $fileName = $_imagenesModel->getImageFileById($id);
 $imagePath = ROOT . 'public/img/1/' . $fileName;
@@ -27,4 +28,4 @@ if ($_imagenesModel->deleteImagenById($id)) {
         $msg = "No se ha podido eliminar el registro.";    
 }  
 
-header('Location: http://localhost/imagenes');
+return $msg;
