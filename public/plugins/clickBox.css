@@ -1,0 +1,3 @@
+.clickBox[data-type="objective"]:not(.selected) {
+      display: none
+}

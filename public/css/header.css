@@ -1,0 +1,568 @@
+.global-header {
+    position: relative;
+    z-index: 45;
+    background: black
+}
+
+.global-header .container-fluid {
+    max-width: 2560px;
+    padding-left: 0;
+    padding-right: 0
+}
+
+.innerNavbar {
+    max-width: 1436px;
+    width: 100%;
+    margin: auto
+}
+
+.global-header nav {
+    padding: 0;
+    min-height: 72px;
+    /*max-height: 72px*/
+}
+
+.global-header nav.navbar.navbar-expand-lg.navbar-light {
+    border-bottom: 1px solid #ccc
+}
+
+.global-header .navbar-light .navbar-nav .nav-link i {
+    color: #ea5d1a;
+}
+
+.global-header .navbar-options {
+    height: 48px
+}
+
+.global-header .navbar-options .navbar-nav .nav-item {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: 16px
+}
+
+.global-header .navbar-options .navbar-nav+.navbar-nav .nav-item {
+    padding-left: 0;
+    padding-right: 16px
+}
+
+.global-header .navbar-brand {
+    border-right: 1px solid #ccc;
+    height: 72px;
+    margin: 0;
+    padding: 20px 32px
+}
+
+.global-header .navbar-brand img {
+    width: 141px
+}
+
+.global-header .navbar-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.global-header .navbar-light .navbar-nav .nav-link.cta {
+    color: rgba(15, 15, 15, 0.6);
+    font-family: sans-serif;
+    line-height: 29px
+}
+
+.global-header .navbar-light .navbar-nav .nav-link.cta img {
+    margin-right: 8px;
+    width: 24px;
+    max-width: 24px;
+    height: 24px
+}
+
+.global-header .navbar-light .navbar-nav .nav-link {
+    width: auto;
+    padding: 0
+}
+
+.global-header .navbar-nav-principal {
+    margin-left: 16px
+}
+
+.global-header .navbar-nav-ctas {
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 16px
+}
+
+.global-header .navbar-light .navbar-nav .nav-link {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 29px;
+    color: #0f0f0f;
+    opacity: 1;
+    cursor: pointer
+}
+
+.global-header .navbar-nav .nav-item {
+    margin: 0 16px
+}
+
+.global-header #langSection {
+    margin-right: 190px;
+}
+
+.global-header .navbar-options #countryDropdown,
+.global-header .navbar-options #langDropdown {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 29px;
+    color: rgba(15, 15, 15, 0.6)
+}
+
+.carList-item h3 small,
+.carList-item h3 small.d-none.d-sm-inline {
+    display: none !important;
+}
+
+#globalHeader .dropdown-toggle::after {
+    content: '';
+    background: url("../img/icon-arrowup.svg") center center no-repeat;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    border: none;
+    transform: rotate(180deg);
+    position: static;
+    top: 24px;
+    right: 8px
+}
+
+.navbar-light .navbar-toggler {
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 23px 24px
+}
+
+.global-header .navbar-toggler span {
+    width: 22px;
+    height: 24px;
+    display: block
+}
+
+.global-header .icon-border-left {
+    border-left: 1px solid #ccc
+}
+
+.global-header .navbar-brand .cont-img {
+    display: flex
+}
+
+#hamburger,
+#searchHamburger {
+    position: absolute;
+    width: 100%;
+    left: 0
+}
+
+#searchHamburger .hmg-content {
+    max-width: 1438px !important;
+    margin: 0 auto;
+    position: relative
+}
+
+#searchHamburger .hmg-desktop {
+    width: 400px;
+    position: absolute;
+    right: 0
+}
+
+[data-type="acordion"].bg-hamburger:not(.selected) {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    content: '';
+    opacity: .7;
+    z-index: 25
+}
+
+.bg-hamburger.selected {
+    display: none !important
+}
+
+.carList-item {
+    display: block;
+    text-align: center;
+    padding: 16px
+}
+
+.carList-item:hover {
+    text-decoration: none;
+    background: #f3f3f0
+}
+
+.hmg-content .carList-item:hover {
+    background: #fafaf9
+}
+
+.carList-item h3 {
+    font-size: 16px;
+    color: #0f0f0f;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    height: 30px
+}
+
+.carList-item h3 small {
+    font-family: sans-serif
+}
+
+.carList-item .card-price {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+    color: rgba(15, 15, 15, 0.6);
+    font-family: sans-serif
+}
+
+.carList-item img {
+    height: 81px;
+}
+
+.hmg-desktop {
+    z-index: 35;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    max-width: 1438px !important;
+    margin: 0 auto
+}
+
+.searchButton {
+    position: relative
+}
+
+.global-header .searchButton.selected::before,
+.global-header .dropdown-toggle.selected::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: white;
+    display: block;
+    position: absolute;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    bottom: -25px;
+    transform: rotate(45deg);
+    right: 3px;
+}
+
+#globalHeader .dropdown-toggle.selected::after {
+    transform: rotate(0deg)
+}
+
+[aria-labelledby="langDropdown"] a {
+    color: rgba(15, 15, 15, 0.6)
+}
+
+[aria-labelledby="langDropdown"] a:hover {
+    color: #ea5d1a;
+    text-decoration: none
+}
+
+#subNavbar {
+    background: #33302E;
+    position: sticky;
+    top: 0;
+    z-index: 25;
+    padding-left: 0;
+    padding-right: 0
+}
+
+#subNavbar .innerNavbar {
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+#subNavbar,
+#subNavbar .innerNavbar,
+#subNavbar ul li {
+    height: 72px
+}
+
+#subNavbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center
+}
+
+.carId {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: right
+}
+
+.carId:hover {
+    color: white;
+    text-decoration: none
+}
+
+#subNavbar ul li {
+    margin: 0 12px;
+    display: flex;
+    align-items: center
+}
+
+#subNavbar ul li:first-child {
+    margin-left: 0
+}
+
+#subNavbar ul a {
+    position: relative;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: sans-serif;
+    padding: 16px 0
+}
+
+#subNavbar ul a:hover {
+    text-decoration: none
+}
+
+#subNavbar ul a::before {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    padding: 0 16px;
+    top: auto
+}
+
+#subNavbar ul li.selected a::before,
+#subNavbar ul a:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
+}
+
+#subNavbar ul li.selected a {
+    color: white
+}
+
+#subNavbar select {
+    width: 220px;
+    border: none;
+    border-radius: 0;
+    background: #33302e;
+    color: white;
+    border-bottom: 2px solid;
+    padding-bottom: 6px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/dropdown_white.png) 103% / 15% no-repeat
+}
+
+#subNavbar select::-ms-expand {
+    display: none
+}
+
+.miniAdvSearch .form-group {
+    margin-bottom: 0;
+    margin-top: 1rem
+}
+
+.navbar-options .nav-link.active span {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 29px;
+    color: rgba(15, 15, 15, 0.6);
+}
+
+@media (max-width: 991.98px) {
+    .global-header .navbar-brand {
+        border: none
+    }
+
+    .global-header .navbar-menu {
+        width: 100%
+    }
+
+    #hamburger {
+        top: 72px
+    }
+
+    #hamburger .hmg-content {
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        background: white;
+        z-index: 35
+    }
+
+    #hamburger .hmg-content > ul > li {
+        padding: 0 16px;
+    }
+
+    .hmg-content #langSelector {
+        padding: 16px !important;
+    }
+
+    .hmg-content ul {
+        padding: 0;
+        margin: 0
+    }
+
+    .hmg-content li {
+        display: block;
+        border-bottom: 1px solid #ccc
+    }
+
+    .hmg-content li:last-child {
+        border-bottom: none
+    }
+
+    .hmg-content li#langSelector,
+    .hmg-content li a:not(.btn) {
+        opacity: 1;
+        padding: 16px 8px;
+        width: 100%;
+        display: block
+    }
+
+    .hmg-content li a:not(.btn) {
+        font-family: sans-serif;
+        font-size: 14px;
+        line-height: 29px;
+        color: #0f0f0f
+    }
+
+    .hmg-content li a:not(.btn):hover {
+        text-decoration: none
+    }
+
+    .hmg-content li .search img {
+        margin-right: 8px;
+        width: 24px;
+        height: 24px
+    }
+
+    .hmg-content a[data-type="acordion"].clickBox.selected {
+        position: relative
+    }
+
+    .hmg-content a[data-type="acordion"].clickBox.selected::before {
+        height: 100%;
+        content: '';
+        width: 2px;
+        background: #000;
+        display: block;
+        position: absolute;
+        left: -16px;
+        top: 0
+    }
+
+    #globalHeader .dropdown-toggle::after {
+        position: initial;
+        right: 0;
+        top: 0;
+        margin: 0
+    }
+
+    .hmg-mobile .miniAdvSearch {
+        margin-bottom: 1rem
+    }
+
+    .form-group {
+        padding: 0 8px
+    }
+}
+
+@media (max-width: 767.98px) {
+    .global-header nav {
+        height: 56px;
+        max-height: 56px
+    }
+
+    .global-header .navbar-toggler {
+        padding: 14px 16px
+    }
+
+    .global-header .navbar-brand {
+        height: initial;
+        padding: 0;
+        padding-left: 16px
+    }
+
+    .global-header .navbar-brand .cont-img img {
+        width: 104px
+    }
+
+    #hamburger {
+        top: 56px
+    }
+
+    #subNavbar,
+    #subNavbar .innerNavbar,
+    #subNavbar ul li {
+        height: 56px
+    }
+
+    #subNavbar .innerNavbar {
+        padding: 0 16px
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hmg-content .clickBox a:not(.btn) {
+        padding: 0 8px;
+        margin-bottom: 16px
+    }
+
+    .hmg-content .clickBox a:not(.btn) h3 {
+        font-family: sans-serif;
+        text-align: left;
+        font-size: 14px;
+        line-height: 29px;
+        height: auto;
+        opacity: 0.6;
+        font-weight: normal;
+        color: #0f0f0f
+    }
+
+    .carList-item:hover {
+        background: transparent !important
+    }
+
+    #subNavbar select,
+    .carId {
+        font-size: 12px
+    }
+
+    .carId {
+        text-align: left
+    }
+
+    #subNavbar select {
+        width: 175px
+    }
+}
